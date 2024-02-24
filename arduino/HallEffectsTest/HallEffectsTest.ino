@@ -35,6 +35,13 @@ bool digital_state = false;
 ISR(TIMER1_COMPA_vect){
   TCNT1  = 0;                  //First, set the timer back to 0 so it resets for next interrupt
   analog_state = analog_state * .9 + .1 * digitalRead(HES_PIN);
+  // apply mild hyseresis between (.45 - .55) to avoid chatter
+  if(digital_state == false && analog_state > .55){ // false=== pin is high, true === pin is low
+    digital_state = true;
+  }
+  if(digital_state == true && analog_state < .45){ // false=== pin is high, true === pin is low
+    digital_state = false;
+  }
 }
 unsigned long rising_edge = 0;
 unsigned long falling_edge = 0;
