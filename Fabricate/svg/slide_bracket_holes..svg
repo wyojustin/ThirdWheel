@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="199.64445mm"
+   height="254.17072mm"
+   viewBox="0 0 199.64445 254.17072"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="slide_bracket_holes..svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0008898"
+     inkscape:cx="359.67996"
+     inkscape:cy="481.07194"
+     inkscape:window-width="3840"
+     inkscape:window-height="2123"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle98"
+     cx="-38.829086"
+     cy="88.831001"
+     r="2.429882"
+     transform="scale(-1,1)"
+     inkscape:export-filename="side_bracket_holes.svg"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle99"
+     cx="-188.13091"
+     cy="34.56918"
+     r="2.429882"
+     transform="scale(-1,1)" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle100"
+     cx="-113.48003"
+     cy="61.700096"
+     r="2.429882"
+     transform="scale(-1,1)" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle101"
+     cx="-10.180893"
+     cy="10.082006"
+     r="2.429882"
+     transform="scale(-1,1)" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle102"
+     cx="-10.180893"
+     cy="244.10379"
+     r="2.429882"
+     transform="scale(-1,1)" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle103"
+     cx="-10.180893"
+     cy="111.25236"
+     r="2.429882"
+     transform="scale(-1,1)" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle104"
+     cx="-64.155441"
+     cy="244.10379"
+     r="2.429882"
+     transform="scale(-1,1)" />
+  <path
+     d="m 10.18087,146.18376 c -1.34193,3e-5 -2.42979,1.08789 -2.42983,2.42983 0.001,0.0102 0.002,0.0203 0.004,0.0305 -7.5e-4,0.003 -0.004,0.005 -0.004,0.008 v 12.623 c 0,0.003 0.003,0.005 0.004,0.008 -0.001,0.01 -0.002,0.02 -0.004,0.03 4e-5,1.34194 1.08789,2.42979 2.42983,2.42982 1.34194,-3e-5 2.42979,-1.08788 2.42983,-2.42982 -4.4e-4,-0.0117 -9.5e-4,-0.0234 -0.002,-0.0351 1.1e-4,-10e-4 0.002,-0.002 0.002,-0.003 v -12.62307 c 0,-0.004 -0.003,-0.006 -0.004,-0.009 10e-4,-0.01 0.002,-0.02 0.004,-0.03 -4e-5,-1.34193 -1.0879,-2.42979 -2.42983,-2.42982 z"
+     style="fill:#000000;stroke:#000000;stroke-width:0.140236"
+     id="path104"
+     inkscape:export-filename="side_bracket_holes.svg"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
+  <path
+     d="m 64.15545,146.18376 c -1.34193,3e-5 -2.42979,1.08789 -2.42983,2.42983 10e-4,0.0102 0.002,0.0203 0.004,0.0305 -7.5e-4,0.003 -0.004,0.005 -0.004,0.008 v 12.623 c 0,0.003 0.003,0.005 0.004,0.008 -10e-4,0.01 -0.002,0.02 -0.004,0.03 4e-5,1.34194 1.08789,2.42979 2.42983,2.42982 1.34194,-3e-5 2.42979,-1.08788 2.42983,-2.42982 -4.4e-4,-0.0117 -9.5e-4,-0.0234 -0.002,-0.0351 1.1e-4,-10e-4 0.002,-0.002 0.002,-0.003 v -12.62307 c 0,-0.004 -0.003,-0.006 -0.004,-0.009 10e-4,-0.01 0.002,-0.02 0.004,-0.03 -4e-5,-1.34193 -1.0879,-2.42979 -2.42983,-2.42982 z"
+     style="fill:#000000;stroke:#000000;stroke-width:0.140236"
+     id="path105"
+     inkscape:export-filename="side_bracket_holes.svg"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96" />
+  <path
+     d="m 10.18087,196.18437 c -1.34193,3e-5 -2.42979,1.08789 -2.42983,2.42983 0.001,0.0102 0.002,0.0203 0.004,0.0305 -7.5e-4,0.003 -0.004,0.005 -0.004,0.008 v 12.623 c 0,0.003 0.003,0.005 0.004,0.008 -0.001,0.01 -0.002,0.02 -0.004,0.03 4e-5,1.34194 1.08789,2.42979 2.42983,2.42982 1.34194,-3e-5 2.42979,-1.08788 2.42983,-2.42982 -4.4e-4,-0.0117 -9.5e-4,-0.0234 -0.002,-0.0351 1.1e-4,-0.001 0.002,-0.002 0.002,-0.003 v -12.62307 c 0,-0.004 -0.003,-0.006 -0.004,-0.009 10e-4,-0.01 0.002,-0.02 0.004,-0.03 -4e-5,-1.34193 -1.0879,-2.42979 -2.42983,-2.42982 z"
+     style="fill:#000000;stroke:#000000;stroke-width:0.140236"
+     id="path106" />
+  <path
+     d="m 64.15545,196.18437 c -1.34193,3e-5 -2.42979,1.08789 -2.42983,2.42983 10e-4,0.0102 0.002,0.0203 0.004,0.0305 -7.5e-4,0.003 -0.004,0.005 -0.004,0.008 v 12.623 c 0,0.003 0.003,0.005 0.004,0.008 -10e-4,0.01 -0.002,0.02 -0.004,0.03 4e-5,1.34194 1.08789,2.42979 2.42983,2.42982 1.34194,-3e-5 2.42979,-1.08788 2.42983,-2.42982 -4.4e-4,-0.0117 -9.5e-4,-0.0234 -0.002,-0.0351 1.1e-4,-0.001 0.002,-0.002 0.002,-0.003 v -12.62307 c 0,-0.004 -0.003,-0.006 -0.004,-0.009 10e-4,-0.01 0.002,-0.02 0.004,-0.03 -4e-5,-1.34193 -1.0879,-2.42979 -2.42983,-2.42982 z"
+     style="fill:#000000;stroke:#000000;stroke-width:0.140236"
+     id="path107" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle107"
+     cx="-64.155441"
+     cy="111.25236"
+     r="2.429882"
+     transform="scale(-1,1)" />
+  <circle
+     style="fill:#1a1a1a;stroke:#000000;stroke-width:0.140236"
+     id="circle108"
+     cx="-10.180893"
+     cy="60.667179"
+     r="2.429882"
+     transform="scale(-1,1)" />
+</svg>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="chain_outer.svg"
+   inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.2296198"
+     inkscape:cx="130.52815"
+     inkscape:cy="1214.6031"
+     inkscape:window-width="2560"
+     inkscape:window-height="1403"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.230025"
+       d="m 139.49432,271.84426 c -48.478771,0.14325 -96.996369,-0.0321 -145.4506235,0.3456 -11.1455235,3.02371 -20.4110505,13.83287 -19.4472865,25.72821 -0.748102,6.83411 2.606146,13.23518 7.593622,17.70862 31.983324,31.59405 64.921297,62.21018 97.383335,93.31169 23.535123,22.14192 46.637423,44.76864 70.740353,66.29222 20.86774,16.02857 46.81052,25.96468 73.27171,25.8622 39.10821,-0.0209 77.26531,-21.6957 97.3929,-55.2124 8.59248,-14.48342 14.86212,-30.79692 16.06431,-47.69376 0.16454,-13.96998 1.23272,-28.31497 -3.21027,-41.80906 -9.34344,-34.22362 -35.13505,-63.58403 -68.30306,-76.44728 -13.75482,-5.63174 -28.60464,-8.48172 -43.47828,-7.89858 -27.51808,-0.23778 -55.03788,-0.18423 -82.55671,-0.18746 z"
+       id="path7" />
+  </g>
+</svg>
