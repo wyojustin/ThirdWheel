@@ -80,17 +80,22 @@ void hall_effect_sensor_setup(){
   pinMode(13, OUTPUT);
   reset_intervals();
 }
+
 void setup(){
   Serial.begin(115200);
+  for(int i = 0; i < 30; i++){
+    Serial.println();
+  }
   Serial.println("ThirdWheel.ino");
+  Serial.println();
   button_setup();
   motor_setup();
   timer_interrupt_setup();
   hall_effect_sensor_setup();
 }
 
-float analog_state = 0;
-bool digital_state = true;
+float analog_state = 1;
+bool digital_state = false;
 bool state_changed = false;
 unsigned long rising_edge = 0;
 unsigned long falling_edge = 0;
@@ -105,24 +110,8 @@ int get_pulse_intervals(int n, int* intervals){
 }
 
 ISR(TIMER1_COMPA_vect){
-  unsigned long new_rising_edge;
   TCNT1  = 0;                  //First, set the timer back to 0 so it resets for next interrupt
-  analog_state = analog_state * .99 + .01 * digitalRead(HES_PIN);
-  // apply mild hyseresis between (.45 - .55) to avoid chatter
-  if(digital_state == true && analog_state > .55){ // false === pin is high, true === pin is low
-    digital_state = false;
-    state_changed = true;
-    new_rising_edge = millis();
-    pulse_interval = new_rising_edge - rising_edge;// AKA gap
-    pulse_intervals[pulse_interval_number++] = pulse_interval;
-    pulse_interval_number %= N_PULSE_INTERVAL;
-    rising_edge = new_rising_edge;
-  }
-  if(digital_state == false && analog_state < .45){ // false === pin is high, true === pin is low
-    digital_state = true;
-    state_changed = true;
-    falling_edge = millis();
-  }
+  analog_state = analog_state * .9 + .1 * digitalRead(HES_PIN);
 }
 
 void step(int pd_us){
@@ -130,6 +119,7 @@ void step(int pd_us){
   delayMicroseconds(pd_us/2);
   digitalWrite(driverPul,LOW);
   delayMicroseconds(pd_us/2);
+  update_digital_state();
 }
 
 
@@ -202,7 +192,27 @@ const int N_MAGNET = 3;
 const float METERS_PER_MAGNET = C / N_MAGNET;
 const float MILES = 1609.34; //## meters
 const float HOUR = 3600; //## seconds
-const int MAX_PULSE_INTERVAL = 1577;
+const int MAX_PULSE_INTERVAL = 577;
+
+void update_digital_state(){
+  unsigned long new_rising_edge;
+
+  // apply mild hyseresis between (.45 - .55) to avoid chatter
+  if(digital_state == true && analog_state > .55){ // false === pin is high, true === pin is low
+    digital_state = false;
+    state_changed = true;
+    new_rising_edge = millis();
+    pulse_interval = new_rising_edge - rising_edge;// AKA gap
+    pulse_intervals[pulse_interval_number++] = pulse_interval;
+    pulse_interval_number %= N_PULSE_INTERVAL;
+    rising_edge = new_rising_edge;
+  }
+  if(digital_state == false && analog_state < .45){ // false === pin is high, true === pin is low
+    digital_state = true;
+    state_changed = true;
+    falling_edge = millis();
+  }
+}
 
 void hall_loop(){
   // copy variables that might be chaned in ISR
@@ -214,7 +224,7 @@ void hall_loop(){
   float speed;
 
   int my_intervals[3];
-  
+  update_digital_state();
   if(my_rising_edge < now &&
      now - my_rising_edge > MAX_PULSE_INTERVAL){
     speed = 0;
@@ -227,21 +237,21 @@ void hall_loop(){
   }
   if(state_changed){
     state_changed = false;
-    Serial.print("state changed to: ");
-    Serial.println(my_digital_state);
+    get_pulse_intervals(1, my_intervals);
     if(my_digital_state == true){ // deal with new rising edge
       if(gear_state == DEPLOYED){
-	get_pulse_intervals(3, my_intervals);
-	speed = 100 * MILES / HOUR;
-	for(int i = 0; i < 3; i++){
+	speed = 1000 * MILES / HOUR;
+	for(int i = 0; i < 1; i++){
 	  float s = METERS_PER_MAGNET / (my_intervals[i] / 1000.);
-	  Serial.print(s);
-	  Serial.print(" ");
+	  Serial.print("s: ");
+	  Serial.println(s);
 	  if(s < speed){
 	    speed = s;
 	  }
 	}
 	Serial.println();
+	Serial.print("speed :");
+	Serial.println(speed);
 	if(speed > 5 * MILES / HOUR){
 	  Serial.print("Gear up!");
 	  Serial.print(speed);
